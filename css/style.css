@@ -103,10 +103,19 @@ body{
     opacity: 1;
     transition: .15s ease-out;
 }
+.circle-image:hover .menu{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s linear; 
+    
+}
 .menu {
     position: absolute;
     left: 130px;
     top:450px;
+    visibility: hidden;
+    opacity: 0;
+    
 }
 .list-item{
     display: block;
