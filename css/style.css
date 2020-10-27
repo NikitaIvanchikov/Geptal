@@ -254,3 +254,45 @@ body>.row{
 .instruction{
     background-image: url(../img/Instruction_button.png);
 }
+.cover-item{
+    display: none;
+    background-image: url(../img/cover-item__bg.png);
+    box-shadow: 0 0 5px black;
+    background-repeat: no-repeat;
+    width: 888px;
+    height: 148px;
+    border-radius: 74px;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: -170px;
+    z-index: 200;
+    position: relative;
+}
+.cover-item__close{
+    width: 100px;
+    height: 100px;
+    box-shadow: inset 0 0 3px black, 0 0 5px black;
+    border: 12px solid #67a707;
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px;
+    background-image:url(../img/Btn_Close_green.png);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+}
+.cover-item__text{
+    text-transform: uppercase;
+    color: #267826;
+    font-weight: bold;
+    font-size: 48px;
+    margin-left: 30px;
+}
+.cover-item__close:hover{
+    background-image:url(../img/Btn_Close__hover.png);
+    background-position: 10px 12px;
+    
+}
+.cover-item__close:active{
+    background-position: 15px 15px;
+    background-image:url(../img/Btn_Close_grey.png);
+}

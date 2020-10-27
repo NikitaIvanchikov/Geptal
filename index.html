@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Гептрал</title>
+    
 </head>
 <body>
     <header class="header">
@@ -38,29 +39,53 @@
                                 <div class="liver"><img src="img/Liver.png" alt=""></div>
                                 <div class="border"><img src="img/circle-border.png" alt=""></div>
                                 <ul class="menu">
-                                    <li class="list__item">
-                                        <div class="list-mark">
-                                            <div class="list-mark__ellipse"><img src="img/list-mark-ellipse.png" alt=""></div>
-                                            <div class="list-mark__arrow"><img src="img/list-mark__arrow.png" alt=""></div>
-                                            <div class="list-mark__hover"><img src="img/list-mark__hover.png" alt=""></div>
+                                    <li >
+                                        <div class="list__item">
+                                            <div class="list-mark" onclick="coverItemOpen(0)">
+                                                <div class="list-mark__ellipse"><img src="img/list-mark-ellipse.png" alt=""></div>
+                                                <div class="list-mark__arrow"><img src="img/list-mark__arrow.png" alt=""></div>
+                                                <div class="list-mark__hover"><img src="img/list-mark__hover.png" alt=""></div>
+                                            </div>
+                                            <div class="list__item__text"><p>Обеспечивает <span class="light-green">антиоксидантное</span><br/>и <span class="light-green">дезинтоксикационное</span> действие</p></div>
                                         </div>
-                                        <div class="list__item__text"><p>Обеспечивает <span class="light-green">антиоксидантное</span><br/>и <span class="light-green">дезинтоксикационное</span> действие</p></div>
+                                        <div class="cover-item">
+                                            <button class="cover-item__close" onclick='coverItemClose(0)'></button>
+                                            <div class="cover-item__text">Синтез глутатиона</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                       <div class="list__item">
+                                            <div class="list-mark" onclick="coverItemOpen(1)">
+                                                <div class="list-mark__ellipse"><img src="img/list-mark-ellipse.png" alt=""></div>
+                                                <div class="list-mark__arrow"><img src="img/list-mark__arrow.png" alt=""></div>
+                                                <div class="list-mark__hover"><img src="img/list-mark__hover.png" alt=""></div>
+                                            </div>
+                                            <div class="list__item__text">
+                                                <p><span class="light-green">Восстанавливает структуру</span> <br/> мембран гепатоцитов</p>
+                                            </div>
+                                       </div>
+                                       <div class="cover-item">
+                                        <button class="cover-item__close" onclick='coverItemClose(1)'></button>
+                                        <div class="cover-item__text">Синтез фосфатидилхолина</div>
+                                    </div>
                                     </li>
                                     <li class="list__item">
-                                        <div class="list-mark">
-                                            <div class="list-mark__ellipse"><img src="img/list-mark-ellipse.png" alt=""></div>
-                                            <div class="list-mark__arrow"><img src="img/list-mark__arrow.png" alt=""></div>
-                                            <div class="list-mark__hover"><img src="img/list-mark__hover.png" alt=""></div>
+                                        <div class="list__item">
+                                            <div class="list__item">
+                                                <div class="list-mark" onclick="coverItemOpen(2)">
+                                                <div class="list-mark__ellipse"><img src="img/list-mark-ellipse.png" alt=""></div>
+                                                <div class="list-mark__arrow"><img src="img/list-mark__arrow.png" alt=""></div>
+                                                <div class="list-mark__hover"><img src="img/list-mark__hover.png" alt=""></div>
+                                            </div>
+                                                <div class="list__item__text">
+                                                    <p>Способствует <span class="light-green">выведению</span> <br/> токсических желчных кислот</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="list__item__text"><p><span class="light-green">Восстанавливает структуру</span> <br/> мембран гепатоцитов</p></div>
-                                    </li>
-                                    <li class="list__item">
-                                        <div class="list-mark">
-                                            <div class="list-mark__ellipse"><img src="img/list-mark-ellipse.png" alt=""></div>
-                                            <div class="list-mark__arrow"><img src="img/list-mark__arrow.png" alt=""></div>
-                                            <div class="list-mark__hover"><img src="img/list-mark__hover.png" alt=""></div>
+                                        <div class="cover-item">
+                                            <button class="cover-item__close" onclick='coverItemClose(2)'></button>
+                                            <div class="cover-item__text">Синтез таурина</div>
                                         </div>
-                                        <div class="list__item__text"><p>Способствует <span class="light-green">выведению</span> <br/> токсических желчных кислот</p></div>
                                     </li>
                                     
                                 </ul>
@@ -111,5 +136,6 @@
             </div>
         </aside>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
