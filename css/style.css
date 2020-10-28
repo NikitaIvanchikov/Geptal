@@ -263,10 +263,11 @@ body>.row{
     height: 148px;
     border-radius: 74px;
     align-items: center;
-    padding-left: 20px;
+    padding: 30px;
     margin-top: -170px;
     z-index: 200;
-    position: relative;
+    position: absolute;
+    align-items: center;
 }
 .cover-item__close{
     width: 100px;
@@ -285,7 +286,7 @@ body>.row{
     color: #267826;
     font-weight: bold;
     font-size: 48px;
-    margin-left: 30px;
+    margin:0 30px;
 }
 .cover-item__close:hover{
     background-image:url(../img/Btn_Close__hover.png);
@@ -295,4 +296,9 @@ body>.row{
 .cover-item__close:active{
     background-position: 15px 15px;
     background-image:url(../img/Btn_Close_grey.png);
+}
+.cover-item.right{
+    margin-top: -180px;
+    flex-direction: row-reverse;
+    right: -20px;
 }
