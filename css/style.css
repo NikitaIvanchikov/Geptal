@@ -280,6 +280,7 @@ body>.row{
     background-image:url(../img/Btn_Close_green.png);
     background-repeat: no-repeat;
     background-position: 15px 15px;
+    outline: none;
 }
 .cover-item__text{
     text-transform: uppercase;
